@@ -6,17 +6,16 @@ int main()
     int a[n];
     for (int i = 0; i < n; i++)
     {
-        scanf(" %d", &a[i]);
+        scanf("%d", &a[i]);
     }
-    int count[6] = {0};
+    int count[10] = {0};
     for (int i = 0; i < n; i++)
     {
         count[a[i]]++;
     }
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 10; i++)
     {
         printf("%d-%d\n", i, count[i]);
     }
-
     return 0;
 }
